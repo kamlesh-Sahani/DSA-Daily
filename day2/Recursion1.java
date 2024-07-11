@@ -1,5 +1,4 @@
 class Recursion1{
-
     public static void printNum(int n){
         if(n==0){
             return;
