@@ -13,31 +13,35 @@ class LinkedList{
         const newNode = new Node(data);
         if(!this.head){
             this.head=newNode;
+            return;
         }
         let current = this.head;
         while(current.next){
-            console.log(current);
             current=current.next;
         }
-        current.next=newNode;
+       current.next=newNode;
     }
 
     reverse(){
        // 1->2->3->5->44-3;
-       let prev=null,current,next;
+       let prev=null,current,Next;
        current=this.head;
        while(current){
-        next = current.next;
-        next.next=current;
+        Next = current.next;
+        current.next = prev;
         prev=current;
+        current=Next;
+        
        }
+
+       this.head=prev;
        
 
 
     }
     print(){
-        let current= this.head;
-        while(current.next){
+        let current=this.head;
+        while(current){
             console.log(current.data,"data");
             current=current.next;
         }
@@ -50,3 +54,7 @@ list.append(32);
 list.append(22);
 list.append(34);
 list.print();
+console.log("------------after reversing------");
+list.reverse();
+list.print();
+
