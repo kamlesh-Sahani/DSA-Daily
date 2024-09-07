@@ -7,6 +7,12 @@ Welcome to my **Daily DSA (Data Structures & Algorithms)** repository! 🚀 Here
 This repo is a collection of solutions to various DSA problems, covering a wide range of topics:
 
 - **Arrays & Strings**
+-  **Stack**
+- **Queue**
+- **HashMap**
+- **Map**
+- **WeakMap**
+- **Set**
 - **Linked Lists**
 - **Trees & Graphs**
 - **Dynamic Programming**
